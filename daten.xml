@@ -2,38 +2,38 @@
 <!DOCTYPE MusicstoreLagerbestand SYSTEM "daten.dtd">
 <MusicstoreLagerbestand>
         <Produkt xml:id="123">
-                <Artikelfamilie> Instrument </Artikelfamilie>
-                <Art> E-Gitarre </Art>
-                <Hersteller> Epiphone </Hersteller>
-                <Name Artikelnr="GIT-354484-000"> Les Paul </Name>
-                <Preis> 199 </Preis>
+                <Artikelfamilie>Instrument</Artikelfamilie>
+                <Art>E-Gitarre</Art>
+                <Hersteller>Epiphone</Hersteller>
+                <Name Artikelnr="GIT-354484-000">Les Paul</Name>
+                <Preis>199</Preis>
         </Produkt>
         <Produkt xml:id="465">
-                <Artikelfamilie> Zubehör </Artikelfamilie>
-                <Art> Saiten</Art>
-                <Hersteller> D'Addario </Hersteller>
-                <Name Artikelnr="PAH0007912-000">  Nickel Wound </Name>
-                <Preis> 17.70 </Preis>
+                <Artikelfamilie>Zubehör</Artikelfamilie>
+                <Art>Saiten</Art>
+                <Hersteller>D'Addario</Hersteller>
+                <Name Artikelnr="PAH0007912-000">Nickel Wound</Name>
+                <Preis>17.70</Preis>
         </Produkt>
         <Produkt xml:id="730">
-                <Artikelfamilie> PA </Artikelfamilie>
-                <Art> Lautsprecher </Art>
-                <Hersteller> RCF </Hersteller>
-                <Name Artikelnr="ACC0001306-000">  Aktiv-Lautsprecher </Name>
-                <Preis> 449</Preis>
+                <Artikelfamilie>PA</Artikelfamilie>
+                <Art>Lautsprecher</Art>
+                <Hersteller>RCF</Hersteller>
+                <Name Artikelnr="ACC0001306-000">Aktiv-Lautsprecher</Name>
+                <Preis>449</Preis>
         </Produkt>
         <Produkt xml:id="825">
-                <Artikelfamilie> PA </Artikelfamilie>
-                <Art> Lautsprecher </Art>
-                <Hersteller> RCF </Hersteller>
-                <Name Artikelnr="ACC0001306-000">  Aktiv-Lautsprecher </Name>
-                <Preis> 449</Preis>
+                <Artikelfamilie>PA</Artikelfamilie>
+                <Art> Lautsprecher</Art>
+                <Hersteller>RCF</Hersteller>
+                <Name Artikelnr="ACC0001306-000">Aktiv-Lautsprecher</Name>
+                <Preis>449</Preis>
         </Produkt>
         <Produkt xml:id="420">
-                <Artikelfamilie> PA </Artikelfamilie>
-                <Art> Lautsprecher </Art>
-                <Hersteller> RCF </Hersteller>
-                <Name Artikelnr="ACC0001306-000">  Aktiv-Lautsprecher </Name>
-                <Preis> 449</Preis>
+                <Artikelfamilie>PA</Artikelfamilie>
+                <Art>Lautsprecher</Art>
+                <Hersteller>RCF</Hersteller>
+                <Name Artikelnr="ACC0001306-000">Aktiv-Lautsprecher</Name>
+                <Preis>449</Preis>
         </Produkt>
 </MusicstoreLagerbestand>
