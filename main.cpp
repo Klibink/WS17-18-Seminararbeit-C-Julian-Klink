@@ -47,7 +47,7 @@ int menu() {
 
 
     cout << "Was moechten Sie tun?" << endl;
-    cout << "(1) Parse DTD" <<endl;
+    cout << "(1) Suche Kategorie" <<endl;
     cout << "(2) Parse TXT" <<endl;
     cout << "(3) Parse XML" << endl;
     cout << "(4) Konvertiere Txt und Xml" << endl;
@@ -75,47 +75,43 @@ int menu() {
         {
 
         ClToken *aktuelleSuche= new ClToken;
+        ClToken *aktuellesProdukt = new ClToken;
 
         cout <<"Geben Sie eine Kategorie ein:" <<endl;
         cin >>kategorie;
         cin >>suchObjekt;
 
-      /*  for(aktuelleSuche=token->child()->child();aktuelleSuche!=NULL;aktuelleSuche->sibling())
+        for(aktuellesProdukt=token->child();aktuellesProdukt!=NULL;aktuellesProdukt=aktuellesProdukt->sibling())
         {
-cout <<aktuelleSuche->name();
-
-            if(!strcmp(kategorie,aktuelleSuche->name()))
+            for(aktuelleSuche=aktuellesProdukt->child();aktuelleSuche!=NULL;aktuelleSuche=aktuelleSuche->sibling())
             {
 
-
-
-
-                if(!strcmp(suchObjekt,aktuelleSuche->inhalt()))
-                {
-
-                        cout <<aktuelleSuche->name() << aktuelleSuche->inhalt() <<endl;
-
-
-                }
-            }
-
-        }*/
-
-            for(aktuelleSuche=token->child()->child();aktuelleSuche->sibling()!=NULL;aktuelleSuche->sibling())
-                {
                 if(!strcmp(kategorie,aktuelleSuche->name()))
-                    {
-                        cout << aktuelleSuche->name();
+                {
 
+                    if(!strcmp(suchObjekt,aktuelleSuche->inhalt()))
+                    {
+
+                            cout <<aktuelleSuche->name() << " " << aktuelleSuche->inhalt() <<endl;
 
                     }
 
                 }
 
+            }
+
+
         }
 
 
 
+
+
+
+        }
+
+
+        return 1;
 
 
         break;
@@ -261,13 +257,13 @@ ClAusgabe::druckeNeueDatei(ClToken *token, ClTxt *txtElement){
 
     ClToken *now=new ClToken;
 
-    for(now=token->child()->child();now->sibling()!=NULL;now=now->sibling()){
+    for(now=token->child()->child();now!=NULL;now=now->sibling()){
     //if(token->tokenChild->tokenChild!=NULL){
         ausgabeDatei << " "<< " <" << now->name() << ">" << now->inhalt() << "</" << now->name() << ">" <<endl;
    // }
          }
 
-    ausgabeDatei << "   <stock> " <<endl;
+    ausgabeDatei << "  <stock> " <<endl;
 
     ClTxt *aktuelles = new ClTxt;
 
@@ -278,7 +274,7 @@ ClAusgabe::druckeNeueDatei(ClToken *token, ClTxt *txtElement){
     }
 
 
-    ausgabeDatei << "   </stock> " <<endl;
+    ausgabeDatei << "  </stock> " <<endl;
 
 
     ausgabeDatei <<" "<<"</" << token->child()->name() <<">" << endl; //Ende erstes Objekt
@@ -294,7 +290,7 @@ ClAusgabe::druckeNeueDatei(ClToken *token, ClTxt *txtElement){
 
          }
 
-    ausgabeDatei << "   <stock> " <<endl;
+    ausgabeDatei << "  <stock> " <<endl;
 
     for(aktuelles=txtElement;aktuelles->getNext()!=NULL;aktuelles=aktuelles->getNext()){
         if(!strcmp(aktuelles->getTxtID(),jetziges->att.zeigeAttWert(0))){
@@ -303,7 +299,7 @@ ClAusgabe::druckeNeueDatei(ClToken *token, ClTxt *txtElement){
     }
 
 
-    ausgabeDatei << "   </stock> " <<endl;
+    ausgabeDatei << "  </stock> " <<endl;
 
     ausgabeDatei <<" "<<"</" << jetziges->name() <<">" << endl;
     }
