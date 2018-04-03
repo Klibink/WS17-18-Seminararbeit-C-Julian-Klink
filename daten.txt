@@ -1,9 +1,9 @@
-123 Hochlager       125
-465 Hochlager       78
-465 Warenlager01    85
-730 Warenlager01    59
-123 Warenlager02    45
-730 Warenlager02    56
+123 Hochlager 125
+465 Hochlager 78
+465 Warenlager01 85
+730 Warenlager01 59
+123 Warenlager02 45
+730 Warenlager02 56
 825 Hochlager 36
 420 Warenlager02 69
 
