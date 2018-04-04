@@ -13,5 +13,5 @@ Unkommentiert geblieben sind Klassen und Funktionen/Methoden, die entweder aus d
 
 Anmerkungen:
 Die Funktion "ClTxt::ClTxt verarbeite Txt(ifstream &datei)" füllt die Variablen der ClTxt Objekte mit Inhalt und ist den "verarbeite" Funktionen aus der Vorlesung sehr ähnlich.
-Default wird der puffer mit Inhalt gefüllt und abhängig davon in welchem Zustand es sich befindet, wenn die Schleife auf ein Leerzeichen trifft, wird eine andere Variable des Objekts mit Inhalt gefüllt.
+Default wird der "puffer" mit Inhalt gefüllt und abhängig davon in welchem Zustand es sich befindet, wenn die Schleife auf ein Leerzeichen trifft, wird eine andere Variable des Objekts mit dem Inhalt aus "puffer" gefüllt.
 
