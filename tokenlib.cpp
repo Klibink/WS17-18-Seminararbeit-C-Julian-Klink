@@ -5,7 +5,6 @@ using namespace std;
 #include <fstream>
 #include "string.h"
 
-//#include "class.h"
 #include "token.h"
 
 

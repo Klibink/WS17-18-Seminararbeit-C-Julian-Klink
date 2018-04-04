@@ -1,0 +1,18 @@
+# WS17-18-Seminararbeit-C-Julian-Klink
+
+
+Erstellt für das Seminar C++ Programmieren - 1 im WS 17/18 bei Herrn Professor Eide, Oyvind
+
+
+
+Repository zu finden unter: https://github.com/Klibink/WS17-18-Seminararbeit-Cplusplus-Julian-Klink.git
+
+Diese Datei beschreibt die Lösungsansätze für Aufgabe 1.1 und Aufgabe 1.2
+
+Erklärung zu 1.1:
+Zur Lösung der Aufgabe habe ich zunächst eine Klasse(ClAusgabe) mit 2 Methoden erstellt. Die erste Methode lädt die Daten aus den zwei Eingabedateien und die zweite Methode überführt die Daten beider Dateien in eine gemeinsame XML-Instanz. Die Methode "laden()" fragt den Benutzer zuerst nach einer Txt-Datei, parst diese und gibt das Ergebnis am Bildschirm aus. Der Txt-Parser ist sehr an den XML-Parsern aus der Vorlesung orientiert. Danach wird der Benutzer nach einer XML-Datei gefragt und auch diese wird geparst und das Ergebnis erscheint am Bildschirm. Die Klassen und Quell-Dateien hierzu habe ich aus der Vorlesung übernommen. Als nächstes wird die zweite Methode der Klasse ClAusgabe aufgerufen und das Wurzel-Token-Element und das Txt-Hauptelement als Parameter übergeben. Der Benutzer wird in der Methode erneut nach einem Namen einer XML-Datei gefragt, diesmal als Ausgabe-Datei und beide Objekte werden durch diverse for-Schleifen(Erklärung zu finden im Code) in einer gemeinsamen Instanz zusammengefasst.
+
+
+Erklärung zu 1.2:
+Zur Lösung habe ich die gleichen Klassen und Quell-Dateien wie in Aufgabe 1.1 verwendet. Nachdem die XML-Datei geparst wurde und unser "token-Objekt" mit Inhalt gefüllt wurde, werden zwei Pointer vom Typ ClToken als "new ClToken" deklariert, deren Variablen-Inhalt wir füllen können, indem wir sie auf unser "Wurzelobjekt" zeigen lassen. Danach wird eine Endlosschleife gestartet, die den Benutzer zunächst nach einer Kategorie und einem Suchobjekt innerhalb einer Kategorie fragt. Falls der Benutzer bei Eingabe der Kategorie '0' eingibt, wird die Endlosschleife beendet. Innerhalb der Endlosschleife existieren zwei for-Schleifen. Die äußere for-Schleife läuft solange bis das Kindobjekt vom Wurzelobjekt kein Geschwisterobjekt mehr hat. Die innere for-Schleife läuft solange bis das Kindobjekt vom Kindobjekt vom Wurzelobjekt kein Geschwisterobjekt mehr hat. Innerhalb der inneren for-Schleife wird durch "strcmp" überprüft, ob die erste Benutzereingabe mit dem Namen des sich im Durchlauf befindenden Objekts übereinstimmt. Falls nicht wird die innere for-Schleife unterbrochen und die äußere geht in den zweiten Durchlauf. Falls die beiden Strings übereinstimmen wird erneut überprüft, ob die zweite Benutzereingabe mit dem Inhalt des sich im Durchlauf befindenden Objekts übereinstimmt. Falls auch diese Strings übereinstimmen wird der Objekt Name mit Id und Inhalt ausgegeben. Die innere for-Schleife startet den zweiten Durchlauf und macht solange weiter, bis das letze sibling==NULL ist. Falls die innere for-Schleife ihr Ende erreicht hat, geht die äußere for-Schleife in den nächsten Durchlauf. Sobald auch die äußere for-Schleife ihr Ende erreicht hat wird der Benutzer erneut nach einer Kategorie und einem Suchobjekt gefragt, eben solange bis der Benutzer '0' eingibt.
+

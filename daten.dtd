@@ -1,0 +1,11 @@
+<!ELEMENT Lagerbestand(Produkt+)>
+<!ELEMENT Produkt Artikelfamilie Art Hersteller Name Preis>
+<!ATTLIST Prokukt
+        xml:id: CDATA #REQUIRED>
+<!ELEMENT Artikelfamilie(#PCDATA)>
+<!ELEMENT Art (#PCDATA)>
+<!ELEMENT Hersteller (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ATTLIST Name
+        Artikelnr: CDATA #IMPLIED>
+<!ELEMENT Preis(#PCDATA)>

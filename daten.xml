@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE MusicstoreLagerbestand SYSTEM "daten.dtd">
-<MusicstoreLagerbestand>
+<!DOCTYPE Lagerbestand SYSTEM "daten.dtd">
+<Lagerbestand>
         <Produkt xml:id="123">
-                <Artikelfamilie>Instrument</Artikelfamilie>
-                <Art>E-Gitarre</Art>
-                <Hersteller>Epiphone</Hersteller>
-                <Name Artikelnr="GIT-354484-000">Les Paul</Name>
-                <Preis>199</Preis>
+                <Artikelfamilie>Videospiel</Artikelfamilie>
+                <Art>Computerspiel</Art>
+                <Hersteller>From Software</Hersteller>
+                <Name Artikelnr="GIT-354484-000">Dark Souls</Name>
+                <Preis>40€</Preis>
         </Produkt>
         <Produkt xml:id="465">
                 <Artikelfamilie>Zubehör</Artikelfamilie>
-                <Art>Saiten</Art>
-                <Hersteller>D'Addario</Hersteller>
-                <Name Artikelnr="PAH0007912-000">Nickel Wound</Name>
-                <Preis>17.70</Preis>
-        </Produkt>
-        <Produkt xml:id="730">
-                <Artikelfamilie>PA</Artikelfamilie>
-                <Art>Lautsprecher</Art>
-                <Hersteller>RCF</Hersteller>
-                <Name Artikelnr="ACC0001306-000">Aktiv-Lautsprecher</Name>
-                <Preis>449</Preis>
-        </Produkt>
-        <Produkt xml:id="825">
-                <Artikelfamilie>PA</Artikelfamilie>
-                <Art> Lautsprecher</Art>
-                <Hersteller>RCF</Hersteller>
-                <Name Artikelnr="ACC0001306-000">Aktiv-Lautsprecher</Name>
-                <Preis>449</Preis>
+                <Art>Kabel</Art>
+                <Hersteller>Sony</Hersteller>
+                <Name Artikelnr="PAH0007912-000">Auxkabel</Name>
+                <Preis>12.70€</Preis>
         </Produkt>
         <Produkt xml:id="420">
-                <Artikelfamilie>PA</Artikelfamilie>
-                <Art>Lautsprecher</Art>
-                <Hersteller>RCF</Hersteller>
-                <Name Artikelnr="ACC0001306-000">Aktiv-Lautsprecher</Name>
-                <Preis>449</Preis>
+                <Artikelfamilie>Videospiel</Artikelfamilie>
+                <Art>Xbox-Spiel</Art>
+                <Hersteller>EA</Hersteller>
+                <Name Artikelnr="ACC0001306-000">Skate3</Name>
+                <Preis>20€</Preis>
         </Produkt>
-</MusicstoreLagerbestand>
+        <Produkt xml:id="730">
+                <Artikelfamilie>CD</Artikelfamilie>
+                <Art>DVD</Art>
+                <Hersteller>Marvel</Hersteller>
+                <Name Artikelnr="ACC0001306-000">Thor</Name>
+                <Preis>15€</Preis>
+        </Produkt>
+        <Produkt xml:id="825">
+                <Artikelfamilie>Videospiel</Artikelfamilie>
+                <Art>Computerspiel</Art>
+                <Hersteller>Valve</Hersteller>
+                <Name Artikelnr="ACC0001306-000">Counter-Strike</Name>
+                <Preis>12€</Preis>
+        </Produkt>
+</Lagerbestand>
