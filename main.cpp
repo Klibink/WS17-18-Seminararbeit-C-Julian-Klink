@@ -257,6 +257,10 @@ ClAusgabe::druckeNeueDatei(ClToken *token, ClTxt *txtElement){
 
     ofstream ausgabeDatei(dateiname);                                           // ofstream Objekt wird deklariert
 
+    ausgabeDatei << "<?xml version=""1.0"" encoding=""UTF-8""?>" <<endl;
+    ausgabeDatei << "<!DOCTYPE "<<token->name() <<" SYSTEM ""daten.dtd"">"<<endl;
+
+
     //Beginn Ausgabe Wurzelobjekt
     ausgabeDatei <<"<" <<token->name() <<">" << endl;       //Name des Wurzelobjekts wird ausgegeben, da es auf jeden Fall vorhanden ist
     ausgabeDatei <<" "<<"<" << token->child()->name() <<" "<< token->child()->att.zeigeAttName(0)<< "=" << token->child()->att.zeigeAttWert(0) <<">" << endl; //Name des ersten Kindobjekts wird ausgegeben, da auch dies auf jeden Fall vorhanden ist
